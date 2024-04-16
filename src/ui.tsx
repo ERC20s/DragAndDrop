@@ -21,10 +21,10 @@ let box1: BoxInfo = {
     height: 100,
     width: 100,
     text: "box1",
-    image: "",
+    image: "", //insert image url here
     top: 150,
     left: 100,
-    click: "",
+    click: "", //You could define a click event here. Like a URL or a function.
 },}
 
 let box2: BoxInfo = {
@@ -59,6 +59,7 @@ let drag = -1;
 let drop = -1;
 let toggle = false;
 let log = "click some boxes.."
+
 const resetHighlight = () => {
   highlight = {
       box: {
@@ -72,7 +73,7 @@ const resetHighlight = () => {
       },
   };
   drag = -1;
-  drop = -1; // 'drop' is reset too
+  drop = -1; 
   toggle = false;
 
 };
@@ -87,7 +88,7 @@ else{
       log = "You've already clicked a box. Click another to complete the drop."
   } else {
       highlight.box.height = boxData.box.height;
-      highlight.box.width = boxData.box.width;  // Fixed width for highlights
+      highlight.box.width = boxData.box.width;  // Highlight position = box position
       highlight.box.top = boxData.box.top;
       highlight.box.left = boxData.box.left;
       log = "Box is highlighted."
@@ -207,8 +208,8 @@ const DropThat = (index: number) => {
   const close = () => (
     <UiEntity
        uiTransform={{
-        width: 30, // Adjusted to add unit
-        height: 25, // Adjusted to add unit
+        width: 30, 
+        height: 25,
         margin: '16px 0 8px 270px',
   
       }}
@@ -217,8 +218,8 @@ const DropThat = (index: number) => {
            <Button
             value={"open"}
             uiTransform={{
-              width: 30, // Adjusted to add unit
-              height: 25, // Adjusted to add unit
+              width: 30, 
+              height: 25, 
               margin: { top: 0, left: 0,}
               
             }}
