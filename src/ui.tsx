@@ -154,7 +154,7 @@ const DropThat = (index: number) => {
             positionType: 'absolute',
           }}
           uiBackground={{
-            textureMode: 'center',
+            textureMode: 'stretch',
             texture: {
               src: box1.box.image ? box1.box.image : "https://docs.decentraland.org/images/media/nft-frames.png",
             },
