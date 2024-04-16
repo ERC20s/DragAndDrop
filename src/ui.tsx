@@ -127,8 +127,8 @@ const DropThat = (index: number) => {
   const uiComponent = () => (
     <UiEntity
        uiTransform={{
-        width: 500, // Adjusted to add unit
-        height: 500, // Adjusted to add unit
+        width: 500, 
+        height: 500, 
         margin: '16px 0 8px 270px',
 
       }}
@@ -138,8 +138,8 @@ const DropThat = (index: number) => {
           key={"close"}
           value={"X"}
           uiTransform={{
-            width: 25, // Adjusted to add unit
-            height: 25, // Adjusted to add unit
+            width: 25, 
+            height: 25,
             margin: { top: 0, right: 25,}
             
           }}
@@ -148,8 +148,8 @@ const DropThat = (index: number) => {
         <Button
           value={box1.box.text?.toString()}
           uiTransform={{
-            width: box1.box.width, // Adjusted to add unit
-            height: box1.box.height, // Adjusted to add unit
+            width: box1.box.width, 
+            height: box1.box.height, 
             margin: { top: box1.box.top, left: box1.box.left },
             positionType: 'absolute',
           }}
@@ -166,8 +166,8 @@ const DropThat = (index: number) => {
         <Button
           value={box2.box.text}
           uiTransform={{
-            width: box2.box.width, // Adjusted to add unit
-            height: box2.box.height, // Adjusted to add unit
+            width: box2.box.width, 
+            height: box2.box.height, 
             margin: { top: box2.box.top, left: box2.box.left },
             positionType: 'absolute',
           }}
@@ -184,8 +184,8 @@ const DropThat = (index: number) => {
     <Label
           value={log}
           uiTransform={{
-            width: 'auto', // Adjusted to add unit
-            height: 'auto', // Adjusted to add unit
+            width: 'auto', 
+            height: 'auto', 
             margin: { top: 100, left: 110 },
             positionType: 'absolute',
           }}
@@ -193,8 +193,8 @@ const DropThat = (index: number) => {
 
     <UiEntity
        uiTransform={{
-        width: highlight.box.width, // Adjusted to add unit
-        height: highlight.box.height, // Adjusted to add unit
+        width: highlight.box.width, 
+        height: highlight.box.height, 
         margin: { top: highlight.box.top, left: highlight.box.left },
         positionType: 'absolute',
 
